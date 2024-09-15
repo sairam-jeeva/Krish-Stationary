@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @tailwind base;
+html{
+    scroll-behavior: smooth;
+}
 @tailwind components;
 @tailwind utilities;
 *{
@@ -7,5 +10,5 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'Outfit';
-}
 
+}

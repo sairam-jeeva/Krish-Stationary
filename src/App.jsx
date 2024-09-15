@@ -15,12 +15,12 @@ const App = () => {
         <Header/>
         <HeadDiv/>
         <Features/>
-        <DoubleCom/>
+         <DoubleCom/> 
         <Krish/>
-        <OurProducts/>
+        <OurProducts/> 
         <PremiumDis/>
         <VisitUs/>
-        <Footer/>
+        <Footer/> 
     </div>
   )
 }

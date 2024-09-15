@@ -2,13 +2,13 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}",],
   theme: {
-    extend: {
+    extend:{
       fontFamily: {
         outfit: ['Outfit', 'sans-serif'],
       },
       colors:{
-        customColor:'#bcfd4c',
-        customGray:'#6e6e6e',
+        customColor:'#bcfd4c', 
+        customGray:'#6e6e6e', 
       }
     },
   },
