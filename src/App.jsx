@@ -15,7 +15,7 @@ const App = () => {
         <Header/>
         <HeadDiv/>
         <Features/>
-         <DoubleCom/> 
+        <DoubleCom/> 
         <Krish/>
         <OurProducts/> 
         <PremiumDis/>
@@ -24,5 +24,4 @@ const App = () => {
     </div>
   )
 }
-
 export default App

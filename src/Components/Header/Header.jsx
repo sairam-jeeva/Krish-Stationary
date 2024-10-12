@@ -18,50 +18,54 @@ const Header = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  },[]);
+  }, []);
 
   return (
     <div
-      className={`flex md:justify-around xl:w-[100%] justify-between lg:w-[90%] lg:text-[17px] text-[14px] xl:text-[18px] md:mt-0 xl:mt-3 xl:ml-40 mt-5 font-outfit ml-10 lg:px-[7vw] px-[2vw] 
-      
-      ${isScrolled ? 'md:justify-around md:bg-zinc-100 bg-zinc-100 fixed -top-5 -ml-[1px] w-[100%] lg:w-[120%] xl:w-[100%] xl:-mt-1 xl:h-[180px] lg:left-0 lg:top-0 lg:h-[150px] h-[100px] md:-top-1 md:h-[120px] md:ml-0 md:-mt-1 md:w-[100%] z-50 transition-all duration-300' : 'bg-transparent'} `}
-      id="header">
-
-      <img src={logo} className={`md:w-[10vw] md:mt-7 xl:h-[110px] xl:-ml-40 xl:mt-10 mt-3 w-[20vw] -ml-7 lg:-ml-12 md:ml-[3px] lg:mt-10 lg:h-[12vh] h-[10vh] md:h-[11vh] transition-transform duration-300
-       ${isScrolled ? 'translate-x-4 ml-2 mt-7 md:ml-[30px] xl:ml-[20px] lg:-ml-9' : ''}`}
-  alt="Logo"/>
+      className={`flex justify-between items-center px-4 md:px-8 lg:px-16 xl:px-24 transition-all duration-300 
+      ${isScrolled ? 'bg-gray-800 shadow-lg fixed top-0 w-full z-50' : 'bg-transparent'} ${isOpen ? 'fixed top-0 w-full z-50' : ''}`}
+      id="header"
+      style={{ height: isScrolled ? '80px' : '100px', top: isOpen ? '0' : isScrolled ? '0' : '10px' }}
+    >
+      <img 
+        src={logo} 
+        className={`w-12 h-12 md:w-20 md:h-20 transition-transform duration-300 ${isScrolled ? 'transform scale-90' : ''}`} 
+        alt="Logo" 
+      />
 
       <ul
-        className={`flex flex-col ml-1 md:ml-5 xl:w-[80%]  md:mb-4 lg:text-[23px] lg:ml-14 lg:mt-16 lg:w-[130%] xl:-ml-4 xl:mt-20 md:relative absolute md:flex-row gap-y-10 md:gap-y-0 lg:gap-x-14 xl:gap-x-[4vw] gap-x-[6vw] mt-5 md:mt-12 text-gray-500 text-center cursor-pointer transition-all duration-300 
-          ${isOpen ? 'block bg-green-900 mt-[90px] rounded-xl left-[3px] w-[115vw] h-[510px] justify-center text-white text-[25px] z-[9999] ': 'hidden md:flex'} 
-          ${
-            isScrolled ? 'w-[98%] lg:-mr-20 top-2 h-[560px] md:ml-[60px] lg:ml-[90px] xl:ml-[100px] xl:text-[30px]': ''}`}>
-        <li className="hover:text-customColor">
-          <a href="#ourProducts">School</a>
-        </li>
-        <li className="hover:text-customColor">
-          <a href="#ourProducts">Office</a>
-        </li>
-        <li className="hover:text-customColor">
-          <a href="#ourProducts">Children</a>
-        </li>
-        <li className="hover:text-customColor">
-          <a href="#ourProducts">Special Combo</a>
-        </li>
-        <a href="#footer">
-          <button className=" lg:w-[14vw] md:w-[17vw] lg:-mr-16 w-[45vw] lg:h-[10vh] h-[9vh] md:ml-5 lg:text-[20px] xl:ml-10 xl:text-[25px]  md:-mt-10 text-black text-[5vw] md:text-[17px] bg-customColor rounded-2xl hover:bg-lime-500 hover:text-white">
-            Contact Us
-          </button>
-        </a>
-      </ul>
-      <div
-        className={`md:hidden text-[6vw] cursor-pointer absolute top-7 -right-16 m-4 ${isScrolled ? ' right-16 fixed -mr-4 top-3' : ''}`}
-        onClick={toggleMenu}
+        className={`flex flex-col md:flex-row items-center gap-4 md:gap-8 transition-all duration-300 
+        ${isOpen ? 'absolute top-0 left-0 w-full bg-blue-900 text-white h-screen flex flex-col items-center justify-center md:static md:bg-transparent' : 'hidden md:flex'}`}
       >
+        <div className={`absolute top-0 left-0 w-full h-full bg-gray-900 opacity-80 ${isOpen ? 'block' : 'hidden'} transition-opacity duration-300`} onClick={toggleMenu}></div>
+        
+        <li className={`text-xl md:text-lg py-2 md:py-0 transition-colors duration-200 ${isOpen ? 'text-white' : isScrolled ? 'text-white' : 'text-gray-600'}`}>
+          <a href="#ourProducts" onClick={() => setIsOpen(false)}>School</a>
+        </li>
+        <li className={`text-xl md:text-lg py-2 md:py-0 transition-colors duration-200 ${isOpen ? 'text-white' : isScrolled ? 'text-white' : 'text-gray-600'}`}>
+          <a href="#ourProducts" onClick={() => setIsOpen(false)}>Office</a>
+        </li>
+        <li className={`text-xl md:text-lg py-2 md:py-0 transition-colors duration-200 ${isOpen ? 'text-white' : isScrolled ? 'text-white' : 'text-gray-600'}`}>
+          <a href="#ourProducts" onClick={() => setIsOpen(false)}>Children</a>
+        </li>
+        <li className={`text-xl md:text-lg py-2 md:py-0 transition-colors duration-200 ${isOpen ? 'text-white' : isScrolled ? 'text-white' : 'text-gray-600'}`}>
+          <a href="#ourProducts" onClick={() => setIsOpen(false)}>Special Combo</a>
+        </li>
+        <li className="mt-4 md:mt-0">
+          <a href="#footer">
+            <button 
+              className={`bg-${isScrolled ? 'white text-black' : 'customColor'}  text-black rounded-lg hover:bg-opacity-80 py-2 px-4 transition-all duration-300`}>
+              Contact Us
+            </button>
+          </a>
+        </li>
+      </ul>
+
+      <div className={`md:hidden text-2xl cursor-pointer ${isScrolled ? 'fixed right-4 top-7' : 'absolute top-8 right-6'}`} onClick={toggleMenu}>
         {isOpen ? (
-          <i className="fas fa-times"></i>
+          <i className={`fas fa-times ${isScrolled ? 'text-white' : 'text-black'}`}></i>
         ) : (
-          <i className="fas fa-bars"></i>
+          <i className={`fas fa-bars ${isScrolled ? 'text-white' : 'text-black'}`}></i>
         )}
       </div>
     </div>

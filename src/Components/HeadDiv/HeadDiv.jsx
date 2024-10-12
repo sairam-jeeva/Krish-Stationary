@@ -1,22 +1,44 @@
-import React from 'react' 
-import rubix from '../../Assets/rubix_cube.jpg'
+import React from 'react';
+import rubix from '../../Assets/rubix_cube.jpg';
 
 const HeadDiv = () => {
   return (
-    
-  <div className='md:mt-[3%] mt-[8%] md:ml-10 lg:ml-[7.0%] ml-[8px] lg:w-[85vw] w-[115%] md:w-[90vw] h-screen md:h-[23rem] bg-customColor place-content-center p-[6%] md:p-[3%] rounded-3xl font-outfit' id='headerdiv'> 
-        <div className='flex'>  
-        <div className='flex flex-col lg:w-[100%] md:w-[100%] w-[100%] -mt-10 md:h-[20%]'>
-        <h2 className='text-[35px] md:text-[35px] md:mt-10'>Write your story, our stationery fuels your imagination</h2>
-        <p className='text-lg mt-5 w-[100%] md:w-[70%] text-gray-800'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio veniam ex, totam aliquid accusamus delectus nulla architecto illo alias</p>
+    <div className='mt-[8%] md:mt-[3%] mx-auto w-[90%] lg:w-[85vw] h-auto bg-customColor flex flex-col justify-center p-[6%] md:p-[3%] rounded-3xl font-outfit' id='headerdiv'>
+      
+      <div className='relative flex flex-col md:flex-row justify-between items-center md:items-start'>
+
+        {/* Text Content */}
+        <div className='flex flex-col w-full md:w-[65%] lg:w-[70%] xl:w-[75%]'>
+          <h2 className='text-[28px] md:text-[32px] lg:text-[36px] xl:text-[38px] font-semibold text-center md:text-left leading-tight'>
+            Write your story, our stationery fuels your imagination
+          </h2>
+          <p className='text-base md:text-lg lg:text-[17px] xl:text-[18px] mt-4 md:mt-5 text-gray-800 text-center md:text-left leading-relaxed'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio veniam ex, totam aliquid accusamus delectus nulla architecto illo alias.
+          </p>
         </div>
-        <img src={rubix} className='md:h-[38vh] xl:h-[240px] lg:h-[230px] h-[40vw] contrast-200 absolute lg:translate-y-[-40px] lg:right-[12%] md:right-[7%] xl:right-[10%] -right-[15%] mt-60 md:mt-24 xl:mt-5  mix-blend-multiply' alt="" />
+
+        {/* Image */}
+        <div className='mt-10 md:mt-0 md:w-[35%] lg:w-[30%] xl:w-[25%] flex justify-center md:justify-end'>
+          <img 
+            src={rubix} 
+            className='w-[80%] md:w-full lg:w-[90%] xl:w-[85%] h-auto object-cover rounded-md mix-blend-multiply contrast-200 shadow-none' 
+            alt="Rubix Cube"
+          />
         </div>
-        <div className=''>
-        <a href="#ourProducts"><button className="bg-green-900 w-32 lg:mt-10 mt-10 ml-1  h-12 hover:bg-green-700 rounded-lg text-white">Shop Now</button></a>      
-        </div>
-        </div>  
-  )
+        
+      </div>
+
+      {/* Button */}
+      <div className='mt-8 md:mt-10 flex justify-center md:justify-start'>
+        <a href="#ourProducts">
+          <button className="bg-green-900 px-6 py-3 lg:px-8 lg:py-3.5 hover:bg-green-700 rounded-lg text-white transition duration-200 transform hover:scale-105">
+            Shop Now
+          </button>
+        </a>
+      </div>
+      
+    </div>
+  );
 }
 
-export default HeadDiv
+export default HeadDiv;
