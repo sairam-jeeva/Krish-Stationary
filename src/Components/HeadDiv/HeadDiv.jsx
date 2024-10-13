@@ -20,8 +20,7 @@ const HeadDiv = () => {
           <img 
             src={rubix} 
             className='w-[80%] md:w-full lg:w-[90%] xl:w-[85%] h-auto object-cover rounded-md mix-blend-multiply contrast-200 shadow-none' 
-            alt="Rubix Cube"
-          />
+            alt="Rubix Cube"/>
         </div>
         
       </div>

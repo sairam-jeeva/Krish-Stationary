@@ -14,7 +14,7 @@ const DoubleCom = () => {
           We are providing bulk orders for schools, offices or events and corporate gifting or customized stationery for companies.
           </p>
           <a href="#ourProducts" className='mt-5'>
-            <button className='bg-lime-900 text-white hover:bg-lime-700 h-[40px] w-[120px] md:h-[50px] md:w-[150px] rounded-md'>
+            <button className='bg-green-900 text-white hover:bg-lime-700 h-[40px] w-[120px] md:h-[50px] md:w-[150px] rounded-md'>
               View All
             </button>
           </a>
