@@ -14,10 +14,10 @@ const KitCard = ({
 }) => {
   return (
     <div
-      className={`relative h-auto w-full md:w-[60vw] lg:w-[45vw] xl:w-[350px] ${bgColor} rounded-lg ${borderColor} border-2 mt-5`}
+      className={`relative h-auto w-full max-w-[350px] ${bgColor} rounded-lg ${borderColor} border-2 mt-5`}
     >
       <button
-        className={`absolute ${buttonColor} ${textColor} p-2 rounded-md font-bold text-[15px] md:text-[1.6vw] lg:text-[1.4vw] xl:text-[1.2vw] lg:w-[130px] xl:w-[180px] lg:h-[45px] xl:h-[50px] mt-2 ml-3`}
+        className={`absolute ${buttonColor} ${textColor} p-2 rounded-md font-bold text-sm md:text-base lg:text-lg xl:text-xl lg:w-[130px] xl:w-[180px] lg:h-[45px] xl:h-[50px] mt-2 ml-3`}
       >
         Just at {price}
       </button>
@@ -27,10 +27,10 @@ const KitCard = ({
           className="mix-blend-multiply w-[55%] md:w-[50%] lg:w-[45%] xl:w-[40%] mt-2"
           alt={title}
         />
-        <h2 className="text-[26px] md:text-[28px] lg:text-[30px] xl:text-[32px] text-center font-bold mt-3">
+        <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl text-center font-bold mt-3">
           {title}
         </h2>
-        <ul className="mt-3 flex flex-col gap-2 text-left text-gray-700 md:text-[17px] lg:text-[19px] xl:text-[22px]">
+        <ul className="mt-3 flex flex-col gap-2 text-left text-gray-700 text-base md:text-lg lg:text-xl xl:text-2xl">
           {features.map((feature, index) => (
             <li className="flex items-center gap-2" key={index}>
               <svg
@@ -45,7 +45,7 @@ const KitCard = ({
           ))}
         </ul>
         <button
-          className={`mt-6 hover:${hoverColor} ${buttonColor} text-white font-bold w-full h-[50px] md:w-[65%] lg:w-[55%] xl:w-[50%] rounded-md`}
+          className={`mt-6 hover:${hoverColor} ${buttonColor} text-white font-bold w-full h-[50px] rounded-md`}
         >
           Buy Now
         </button>
@@ -96,7 +96,7 @@ const PremiumDis = () => {
       <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-center w-full">
         Premium Offers
       </h1>
-      <div className="md:flex grid grid-cols-1 justify-center gap-4 lg:gap-6 lg:mt-10 md:mt-5">
+      <div className="flex flex-wrap justify-center gap-4 lg:gap-6 lg:mt-10 md:mt-5">
         {kits.map((kit, index) => (
           <KitCard key={index} {...kit} />
         ))}

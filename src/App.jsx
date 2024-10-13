@@ -2,6 +2,7 @@ import React from 'react'
 import DoubleCom from './Components/DoubleCom/DoubleCom.jsx'
 import Features from './Components/Features/Features'
 import Footer from './Components/Footer/Footer.jsx'
+import Founder from './Components/Founder/Founder.jsx'
 import HeadDiv from './Components/HeadDiv/HeadDiv'
 import Header from './Components/Header/Header'
 import Krish from './Components/Krish/Krish'
@@ -19,6 +20,7 @@ const App = () => {
         <Krish/>
         <OurProducts/> 
         <PremiumDis/>
+        <Founder/>
         <VisitUs/>
         <Footer/> 
     </div>

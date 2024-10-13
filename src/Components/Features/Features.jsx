@@ -19,21 +19,21 @@ const Features = () => {
       <div className='flex flex-col gap-4 text-center items-center'>
         <img className='h-16 w-[50%] md:w-[40%] lg:w-[30%] object-contain' src={payback} alt="Money Refund" />
         <h2 className='font-bold text-lg'>Money Refund</h2>
-        <p className='text-gray-700'>Lorem Ipsum and Maintenance</p>
+        <p className='text-gray-700'>Refund of Money if any products is defect</p>
       </div>
 
       {/* Feature 3: 24Hrs Support */}
       <div className='flex flex-col gap-4 text-center items-center'>
         <img className='h-16 w-[50%] md:w-[40%] lg:w-[30%] object-contain' src={support} alt="24Hrs Support" />
         <h2 className='font-bold text-lg'>Online 24Hrs Support</h2>
-        <p className='text-gray-700'>Lorem Ipsum and Maintenance</p>
+        <p className='text-gray-700'>Call or Message us any time we will work for you</p>
       </div>
 
       {/* Feature 4: Membership Discount */}
       <div className='flex flex-col gap-4 text-center items-center'>
         <img className='h-16 w-[50%] md:w-[40%] lg:w-[30%] object-contain' src={discount} alt="Membership Discount" />
         <h2 className='font-bold text-lg'>Membership Discount</h2>
-        <p className='text-gray-700'>Lorem Ipsum and Maintenance</p>
+        <p className='text-gray-700'>Follow our Social accounts to get discounts</p>
       </div>
 
     </div>

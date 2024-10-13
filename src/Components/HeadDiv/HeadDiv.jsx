@@ -10,12 +10,10 @@ const HeadDiv = () => {
         {/* Text Content */}
         <div className='flex flex-col w-full md:w-[65%] lg:w-[70%] xl:w-[75%]'>
           <h2 className='text-[28px] md:text-[32px] lg:text-[36px] xl:text-[38px] font-semibold text-center md:text-left leading-tight'>
-            Write your story, our stationery fuels your imagination
-          </h2>
+          Krish Stationary – Your One-Stop Shop for All Stationery Needs! </h2>
           <p className='text-base md:text-lg lg:text-[17px] xl:text-[18px] mt-4 md:mt-5 text-gray-800 text-center md:text-left leading-relaxed'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio veniam ex, totam aliquid accusamus delectus nulla architecto illo alias.
-          </p>
-        </div>
+          Krish Stationary offers a wide selection of high-quality stationery products, office supplies, art materials, and school essentials. Whether you're a student, professional, or artist, we have everything you need to get creative and stay organized.
+          </p></div>
 
         {/* Image */}
         <div className='mt-10 md:mt-0 md:w-[35%] lg:w-[30%] xl:w-[25%] flex justify-center md:justify-end'>
