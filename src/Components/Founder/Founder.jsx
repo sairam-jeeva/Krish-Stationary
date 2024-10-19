@@ -19,14 +19,10 @@ const Founder = () => {
             About the Founder
           </h2>
           <p className="text-gray-600 text-base md:text-lg lg:text-xl mb-4 leading-relaxed">
-            Barath U is the founder of TuneUp Technologies, a technical training and SaaS solutions company based in Salem, Tamil Nadu.
-            With a passion for technology and a vision for transforming education and corporate training, Barath has developed a suite of
-            innovative solutions that aim to bridge the skills gap and empower the workforce.
+            G. Naveen is a highly skilled professional with a diploma in Electrical and Electronics Engineering and a diploma in Computer Applications. He has a wealth of experience in the public service sector, having worked as a Gold Appraiser and providing Electrical and Refrigeration services since 2012.
           </p>
           <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed mb-6">
-            His latest product, TaskUp, is designed to streamline corporate hiring assessments, providing a seamless and anti-malpractice
-            experience for candidates and recruiters alike. Barath's journey as a startup founder is fueled by a dedication to excellence,
-            continuous learning, and making a positive impact in the tech industry.
+            With two branches in Salem and Dharmapuri, Naveen's expertise in both technical and appraisal services showcases his commitment to quality and customer satisfaction. His diverse skill set empowers him to deliver exceptional services and support the community in various capacities.
           </p>
           {/* Social Media Links */}
           <div className="flex gap-4 mt-4">
