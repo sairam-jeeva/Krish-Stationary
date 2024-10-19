@@ -3,7 +3,7 @@ import founderImage from '../../Assets/founder.jpg'; // Update the path to your 
 
 const Founder = () => {
   return (
-    <div className="container mx-auto p-6 md:p-10 lg:p-16 xl:p-24">
+    <div className="container mx-auto p-6 md:p-10 lg:p-16 xl:p-24" id='founder'>
       <div className="relative flex flex-col lg:flex-row items-center justify-center bg-gray-100 rounded-lg shadow-lg overflow-hidden">
         {/* Founder Image */}
         <div className="w-full md:w-1/2 lg:w-1/2 h-[300px] md:h-[400px] lg:h-[500px] overflow-hidden">

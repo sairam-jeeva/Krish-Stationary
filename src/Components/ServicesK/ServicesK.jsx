@@ -3,7 +3,7 @@ import { FaTools, FaGift, FaHandsHelping } from 'react-icons/fa';
 
 const Services = () => {
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white py-16" id='services'>
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
