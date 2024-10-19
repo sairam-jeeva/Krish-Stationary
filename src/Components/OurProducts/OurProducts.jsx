@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import book from '../../Assets/book.jpeg';
 import markers from '../../Assets/markers.jpg';
 import paperclips from '../../Assets/paperclips.jpg';
@@ -8,9 +8,13 @@ import sketchpad from '../../Assets/skecthpad.jpg';
 import stapers from '../../Assets/stapers.jpg';
 import stickynotes from '../../Assets/stickynote.jpg';
 import whiteboardmarkers from '../../Assets/whiteboardmarkers.jpg';
+import folder from '../../Assets/folder.jpg';
+import eraser from '../../Assets/eraser.jpg';
+import glue from '../../Assets/glue.jpg';
 
 const OurProducts = () => {
-  // const history = useHistory(); // For navigation
+  const [showAll, setShowAll] = useState(false); // State to toggle between showing limited and all products
+
   const products = [
     {
       title: "Notebooks",
@@ -39,8 +43,6 @@ const OurProducts = () => {
       image: pencil,
       discount: "33% Off",
     },
-    // Uncomment the following products to add them back
-    
     {
       title: "Markers",
       description:
@@ -101,16 +103,35 @@ const OurProducts = () => {
         "Plastic folders for keeping documents organized and protected, available in multiple colors.",
       price: 40,
       originalPrice: 50,
-      image: book,
+      image: folder,
       discount: "20% Off",
+    },
+    {
+      title: "Erasers",
+      description:
+        "High-quality erasers for clean and precise erasing, suitable for students, artists, and professionals.",
+      price: 5,
+      originalPrice: 10,
+      image: eraser,
+      discount: "50% Off",
+    },
+    {
+      title: "Glue Sticks",
+      description:
+        "Easy-to-use glue sticks for crafting and office use, providing a strong hold without the mess.",
+      price: 25,
+      originalPrice: 35,
+      image: glue,
+      discount: "29% Off",
     },
     
   ];
 
   const handleSeeAllClick = () => {
-    // Navigate to the "All Products" page
-    // history.push("/all-products");
+    setShowAll(!showAll); // Toggle between showing all products and the default limited set
   };
+
+  const displayedProducts = showAll ? products : products.slice(0, 6); // Show either all products or the first 6
 
   return (
     <div className="font-outfit w-full bg-gray-50 py-10" id="ourProducts">
@@ -118,34 +139,25 @@ const OurProducts = () => {
         Our Products
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24">
-        {products.slice(0, 9).map((product, index) => (
+        {displayedProducts.map((product, index) => (
           <div
             key={index}
             className="relative flex flex-col justify-between items-center p-6 bg-white shadow-lg border border-gray-200 rounded-lg cursor-pointer hover:shadow-xl transition-shadow duration-300 h-full"
           >
-            {/* Discount Badge */}
             <p className="absolute top-2 right-2 px-2 py-1 bg-red-500 text-white text-xs sm:text-sm md:text-base lg:text-lg rounded-lg">
               {product.discount}
             </p>
-
-            {/* Product Image */}
             <img
               src={product.image}
               className="h-40 w-40 sm:h-48 sm:w-48 md:h-52 md:w-52 lg:h-56 lg:w-56 xl:h-60 xl:w-60 object-cover rounded-md mb-5"
               alt={product.title}
             />
-
-            {/* Product Title */}
             <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-gray-900 mt-2 text-center">
               {product.title}
             </h2>
-
-            {/* Product Description */}
             <p className="text-gray-600 text-sm md:text-base lg:text-lg xl:text-xl text-center leading-tight mt-2 px-2">
               {product.description}
             </p>
-
-            {/* Product Price */}
             <div className="flex items-center justify-center mt-4 space-x-2">
               <span className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-purple-700 border-b-2 border-purple-700 pb-1">
                 Rs.{product.price}
@@ -154,25 +166,19 @@ const OurProducts = () => {
                 Rs.{product.originalPrice}
               </sub>
             </div>
-
-            {/* Decorative Divider */}
             <hr className="my-4 w-full border-gray-200" />
-
-            {/* Buy Now Button */}
             <button className="mt-auto bg-purple-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-purple-500 transition duration-300 transform hover:scale-105">
               Buy Now
             </button>
           </div>
         ))}
       </div>
-
-      {/* See All Button */}
       <div className="flex justify-center mt-10">
         <button
           onClick={handleSeeAllClick}
           className="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-500 transition duration-300 transform hover:scale-105"
         >
-          See All
+          {showAll ? "Show Less" : "See All"}
         </button>
       </div>
     </div>

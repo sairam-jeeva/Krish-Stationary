@@ -29,7 +29,7 @@ const Header = () => {
     >
       <img 
         src={logo} 
-        className={`w-12 h-12 md:w-20 md:h-20 transition-transform duration-300 ${isScrolled ? 'transform scale-90' : ''}`} 
+        className={`w-12 h-12 md:w-20 md:h-16 transition-transform duration-300 ${isScrolled ? 'transform scale-90' : ''}`} 
         alt="Logo" 
       />
 

@@ -10,7 +10,7 @@ const Founder = () => {
           <img 
             src={founderImage} 
             alt="Founder" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-fit"
           />
         </div>
         {/* About the Founder */}
