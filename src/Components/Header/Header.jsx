@@ -49,7 +49,7 @@ const Header = () => {
           <a href="#ourProducts" onClick={() => setIsOpen(false)}>Children</a>
         </li>
         <li className={`text-xl md:text-lg py-2 md:py-0 transition-colors duration-200 ${isOpen ? 'text-white' : isScrolled ? 'text-white' : 'text-gray-600'}`}>
-          <a href="#ourProducts" onClick={() => setIsOpen(false)}>Special Combo</a>
+          <a href="#premiumDis" onClick={() => setIsOpen(false)}>Special Combo</a>
         </li>
         <li className="mt-4 md:mt-0">
           <a href="#footer">

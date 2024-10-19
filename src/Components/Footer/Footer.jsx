@@ -3,7 +3,7 @@ import logo from '../../Assets/logo.jpg';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white font-outfit">
+    <footer className="bg-gray-800 text-white font-outfit" id='footer' >
       <div className="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         
         {/* Logo and Social Media Icons */}
