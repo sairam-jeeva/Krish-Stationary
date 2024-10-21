@@ -7,6 +7,7 @@ import Founder from './Components/Founder/Founder.jsx'
 import HeadDiv from './Components/HeadDiv/HeadDiv'
 import Header from './Components/Header/Header'
 import Krish from './Components/Krish/Krish'
+import KrishElectrical from './Components/KrishElectricals/KrishElectricals.jsx'
 import OurProducts from './Components/OurProducts/OurProducts'
 import PremiumDis from './Components/PremiumDis/PremiumDis'
 import ServicesK from './Components/ServicesK/ServicesK.jsx'
@@ -25,6 +26,7 @@ const App = () => {
         <Founder/>
         <AboutKrishStationary/>
         <ServicesK/> 
+        <KrishElectrical/>
         <VisitUs/>
         <Footer/> 
     </div>
