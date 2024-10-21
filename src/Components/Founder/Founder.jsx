@@ -5,7 +5,7 @@ import jr_mdImage from '../../Assets/jr_md.jpg'; // Update the path to the Junio
 
 const Team = () => {
   return (
-    <div className="container mx-auto p-6 md:p-10 lg:p-16 xl:p-24" id='team'>
+    <div className="container mx-auto p-6 md:p-10 lg:p-16 xl:p-24" id='founder'>
       {/* Founder Section */}
       <div className="relative flex flex-col lg:flex-row items-center justify-center bg-gray-100 rounded-lg shadow-lg overflow-hidden mb-12">
         <div className="w-full md:w-1/2 lg:w-1/2 h-[300px] md:h-[400px] lg:h-[500px] overflow-hidden">
@@ -34,7 +34,7 @@ const Team = () => {
       </div>
 
       {/* Managing Director and Junior Managing Director Section */}
-      <div className="mb-12">
+      <div className="mb-12" id='team'>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center text-gray-800">
           Our Leadership
         </h2>

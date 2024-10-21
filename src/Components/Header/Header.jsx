@@ -40,13 +40,13 @@ const Header = () => {
         <div className={`absolute top-0 left-0 w-full h-full bg-black opacity-50 ${isOpen ? 'block' : 'hidden'} transition-opacity duration-300`} onClick={toggleMenu}></div>
         
         <li className={`text-xl md:text-lg py-2 md:py-0 transition-colors duration-200 ${isOpen ? 'text-white' : isScrolled ? 'text-white' : 'text-gray-600'}`}>
-          <a href="#ourProducts" onClick={() => setIsOpen(false)}>School</a>
+          <a href="#krishImage" onClick={() => setIsOpen(false)}>Stationery</a>
         </li>
         <li className={`text-xl md:text-lg py-2 md:py-0 transition-colors duration-200 ${isOpen ? 'text-white' : isScrolled ? 'text-white' : 'text-gray-600'}`}>
-          <a href="#ourProducts" onClick={() => setIsOpen(false)}>Office</a>
+          <a href="#krishElectrical" onClick={() => setIsOpen(false)}>Electricals</a>
         </li>
         <li className={`text-xl md:text-lg py-2 md:py-0 transition-colors duration-200 ${isOpen ? 'text-white' : isScrolled ? 'text-white' : 'text-gray-600'}`}>
-          <a href="#ourProducts" onClick={() => setIsOpen(false)}>Children</a>
+          <a href="#additionals" onClick={() => setIsOpen(false)}>Additional </a>
         </li>
         <li className={`text-xl md:text-lg py-2 md:py-0 transition-colors duration-200 ${isOpen ? 'text-white' : isScrolled ? 'text-white' : 'text-gray-600'}`}>
           <a href="#premiumDis" onClick={() => setIsOpen(false)}>Special Combo</a>

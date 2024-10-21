@@ -47,7 +47,7 @@ const KitCard = ({
         <button
           className={`mt-6 hover:${hoverColor} ${buttonColor} text-white font-bold w-full h-[50px] rounded-md`}
         >
-          Buy Now
+         <a href="https://wa.me/message/BNVH64UXYSWZF1">Buy Now</a>
         </button>
       </div>
     </div>

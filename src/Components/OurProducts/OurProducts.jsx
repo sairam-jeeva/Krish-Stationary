@@ -298,7 +298,7 @@ const additionalProducts = [
             </div>
             <hr className="my-4 w-full border-gray-200" />
             <button className="mt-auto bg-purple-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-purple-500 transition duration-300 transform hover:scale-105">
-              Buy Now
+             <a href="https://wa.me/message/BNVH64UXYSWZF1">Buy Now</a>
             </button>
           </div>
         ))}
@@ -313,7 +313,7 @@ const additionalProducts = [
       </div>
       
       {/* Additional Categories Section */}
-      <div className="mt-16">
+      <div className="mt-16" id="additionals">
         <h2 className="text-3xl md:text-4xl xl:text-5xl text-center font-bold mb-10 text-gray-800">
           Additional Categories
         </h2>
@@ -341,7 +341,7 @@ const additionalProducts = [
               </div>
               <hr className="my-4 w-full border-gray-200" />
               <button className="mt-auto bg-purple-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-purple-500 transition duration-300 transform hover:scale-105">
-                Buy Now
+               <a href="https://wa.me/message/BNVH64UXYSWZF1">Buy Now</a>
               </button>
             </div>
           ))}

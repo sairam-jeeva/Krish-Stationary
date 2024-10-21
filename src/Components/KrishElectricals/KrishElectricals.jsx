@@ -65,7 +65,7 @@ const KrishElectrical = () => {
               </div>
             )}
             <button className="bg-purple-600 text-white font-bold py-2 px-6 rounded-full shadow-md hover:bg-purple-500 transition duration-300 transform hover:scale-110">
-              Learn More
+             <a href="https://wa.me/message/BNVH64UXYSWZF1">Learn More</a> 
             </button>
             <div className="absolute top-0 left-0 w-full h-full bg-purple-100 opacity-0 group-hover:opacity-25 transition duration-300 rounded-lg"></div>
           </div>
