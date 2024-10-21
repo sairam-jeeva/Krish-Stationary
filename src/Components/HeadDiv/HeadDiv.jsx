@@ -10,19 +10,36 @@ const HeadDiv = () => {
         {/* Text Content */}
         <div className='flex flex-col w-full md:w-[65%] lg:w-[70%] xl:w-[75%]'>
           <h2 className='text-[28px] md:text-[32px] lg:text-[36px] xl:text-[38px] font-semibold text-center md:text-left leading-tight'>
-          Krish Stationary – Your One-Stop Shop for All Stationery Needs! </h2>
+            Krish Stationary – Your One-Stop Shop for All Stationery Needs!
+          </h2>
           <p className='text-base md:text-lg lg:text-[17px] xl:text-[18px] mt-4 md:mt-5 text-gray-800 text-center md:text-left leading-relaxed'>
-          Krish Stationary offers a wide selection of high-quality stationery products, office supplies, art materials, and school essentials. Whether you're a student, professional, or artist, we have everything you need to get creative and stay organized.
-          </p></div>
+            Krish Stationary offers a wide selection of high-quality stationery products, office supplies, art materials, and school essentials. Whether you're a student, professional, or artist, we have everything you need to get creative and stay organized.
+          </p>
+        </div>
 
         {/* Image */}
         <div className='mt-10 md:mt-0 md:w-[35%] lg:w-[30%] xl:w-[25%] flex justify-center md:justify-end'>
           <img 
             src={rubix} 
             className='w-[80%] md:w-full lg:w-[90%] xl:w-[85%] h-auto object-cover rounded-md mix-blend-multiply contrast-200 shadow-none' 
-            alt="Rubix Cube"/>
+            alt="Rubix Cube"
+          />
         </div>
         
+      </div>
+
+      {/* Enhanced Social Media Offer Note */}
+      <div className='mt-6 flex justify-center'>
+        <div className='relative bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white p-4 rounded-full shadow-lg flex items-center space-x-4 '>
+          <div className='flex-shrink-0'>
+            <span className='bg-white text-purple-500 px-3 py-1 rounded-full font-bold'>
+              5% OFF
+            </span>
+          </div>
+          <p className='font-medium text-lg'>
+            Follow us on social media to avail the discount on any product!
+          </p>
+        </div>
       </div>
 
       {/* Button */}

@@ -15,14 +15,12 @@ const KrishElectrical = () => {
       description:
         "Professional servicing of all major home appliances, including air conditioners, refrigerators, and washing machines.",
       icon: <FaBolt />,
-      price: 2500,
     },
     {
       name: "Home Appliances",
       description:
         "Range of appliances including Fan, Mixy, Water Heater, Cooker, Grinder, Gas Stove, and Tower Jar.",
       icon: <FaHome />,
-      price: 2500,
     },
   ];
 
