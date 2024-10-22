@@ -9,7 +9,7 @@ const Team = () => {
       {/* Founder Section */}
       <div className="relative flex flex-col lg:flex-row items-center justify-center bg-gray-100 rounded-lg shadow-lg overflow-hidden mb-12">
         <div className="w-full md:w-1/2 lg:w-1/2 h-[300px] md:h-[400px] lg:h-[500px] overflow-hidden">
-          <img 
+           <img 
             src={founderImage} 
             alt="Founder" 
             className="w-full h-full object-cover"
@@ -20,14 +20,14 @@ const Team = () => {
             About the Founder
           </h2>
           <p className="text-gray-600 text-base md:text-lg lg:text-xl mb-4 leading-relaxed">
-          G. Naveen is a highly skilled professional with a diploma in Electrical and Electronics Engineering and a diploma in Computer Applications and <span className='text-[19px] text-yellow-600'>Social Media Actor</span> . He has extensive experience in the public service sector, having worked as a Gold Appraiser and providing Electrical and Refrigeration services since 2012.
+           Mr.Naveen G,is a highly skilled professional with a diploma in Electrical and Electronics Engineering and a diploma in Computer Applications and <span className='text-[19px] text-yellow-600'>Social Media Actor</span> . He has extensive experience in the public service sector, having worked as a Gold Appraiser and providing Electrical and Refrigeration services since 2012.
           </p>
           <div className="bg-yellow-100 p-4 rounded-lg mb-6">
             <h3 className="text-2xl font-bold text-yellow-600 mb-2">
               Community Leader & Rotaract Member
             </h3>
             <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-              Naveen is an active member of the <strong>Rotaract Club of Salem Gugai</strong> and currently serves as the <strong>Community Service Chair for the 2024-2025 term</strong>. His dedication to community service and leadership plays a vital role in his efforts to uplift and support local communities.
+             Rtr. Naveen is an active member of the <strong>Rotaract Club of Salem Gugai</strong> and served as the <strong>Community Service Chair for the year 2024-2025</strong>. His dedication to community service and leadership plays a vital role in his efforts to uplift and support local communities.
             </p>
           </div>
         </div>

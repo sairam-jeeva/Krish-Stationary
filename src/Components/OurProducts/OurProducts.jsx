@@ -16,7 +16,7 @@ import glue from '../../Assets/glue.jpg';
 import newYearDecoration from '../../Assets/newyear_decoration.jpg';
 import republicDayDecoration from '../../Assets/republic_day_decoration.jpg';
 import ayudhaPoojaDecoration from '../../Assets/ayudha_pooja_decoration.jpg';
-import diwaliGuns from '../../Assets/diwali_guns.jpg';
+import crackers from '../../Assets/crackers.jpg'
 import loversDayGifts from '../../Assets/lovers_day_gifts.jpg';
 import waterCans from '../../Assets/water_cans.jpg';
 import keyChains from '../../Assets/key_chains.jpg';
@@ -28,12 +28,13 @@ import fancyStationery from '../../Assets/fancy_stationery.jpg';
 import snacksIceCream from '../../Assets/snacks_ice_cream.jpg';
 import schoolGuides from '../../Assets/school_guides.jpg';
 import printoutLamination from '../../Assets/printout_lamination.jpg';
-import spiralBinding from '../../Assets/spiral_binding.jpg';
 import tailoringMaterials from '../../Assets/tailoring_materials.jpg';
 import school_projects from '../../Assets/school_projects.jpg';
+import fancy_kit from '../../Assets/fancy_kit.jpg';
+
 
 const OurProducts = () => {
-  const [showAll, setShowAll] = useState(false); // State to toggle between showing limited and all products
+  const [showAll, setShowAll] = useState(false); 
   const products = [{
     title: "Notebooks",
     description:
@@ -155,6 +156,15 @@ const additionalProducts = [
     image: school_projects, // Replace with the actual image path
   },
   {
+    title: "Fancy Items",
+    description:
+    "Explore a variety of fancy items such as makeup kit and brush",
+    price: 500,
+    originalPrice: 750,
+    discount: "33% Off",
+    image: fancy_kit, // Replace with the actual image path
+  },
+  {
     title: "New Year Decoration",
     description: "Festive decorations for the New Year celebrations.",
     price: 300,
@@ -176,7 +186,7 @@ const additionalProducts = [
     title: "Diwali Guns and Fireworks",
     description: "Safe and exciting fireworks for Diwali celebrations.",
     price: 500,
-    image: diwaliGuns,
+    image: crackers,
   },
   {
     title: "Lover's Day Gifts",
@@ -193,7 +203,7 @@ const additionalProducts = [
   {
     title: "Key Chains",
     description: "Stylish key chains for your keys.",
-    price: 30,
+    price: 50,
     image: keyChains,
   },
   {
@@ -235,7 +245,7 @@ const additionalProducts = [
   {
     title: "School Guides",
     description: "Educational guides for classes 5th to 12th.",
-    price: 120,
+    price: 250,
     image: schoolGuides,
   },
   {
@@ -243,12 +253,6 @@ const additionalProducts = [
     description: "Quick printout, lamination, and scanning services.",
     price: 10,
     image: printoutLamination,
-  },
-  {
-    title: "Spiral Binding",
-    description: "Professional spiral binding for documents.",
-    price: 50,
-    image: spiralBinding,
   },
   {
     title: "Tailoring Materials",
@@ -297,16 +301,18 @@ const additionalProducts = [
               </sub>
             </div>
             <hr className="my-4 w-full border-gray-200" />
+            
             <button className="mt-auto bg-purple-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-purple-500 transition duration-300 transform hover:scale-105">
              <a href="https://wa.me/message/BNVH64UXYSWZF1">Buy Now</a>
             </button>
           </div>
+          
         ))}
       </div>
       <div className="flex justify-center mt-10">
         <button
           onClick={handleSeeAllClick}
-          className="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-500 transition duration-300 transform hover:scale-105"
+          className="bg-gray-800 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-500 transition duration-300 transform hover:scale-105"
         >
           {showAll ? "Show Less" : "See All"}
         </button>

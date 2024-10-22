@@ -30,7 +30,7 @@ const HeadDiv = () => {
 
       {/* Enhanced Social Media Offer Note */}
       <div className='mt-6 flex justify-center'>
-        <div className='relative bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white p-4 rounded-full shadow-lg flex items-center space-x-4 '>
+        <div className='relative bg-gradient-to-r from-green-900 to-blue-900 text-white p-4 rounded-full shadow-lg flex items-center space-x-4 '>
           <div className='flex-shrink-0'>
             <span className='bg-white text-purple-500 px-3 py-1 rounded-full font-bold'>
               5% OFF

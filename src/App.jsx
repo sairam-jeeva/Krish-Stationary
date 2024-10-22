@@ -4,6 +4,7 @@ import DoubleCom from './Components/DoubleCom/DoubleCom.jsx'
 import Features from './Components/Features/Features'
 import Footer from './Components/Footer/Footer.jsx'
 import Founder from './Components/Founder/Founder.jsx'
+import Gallery from './Components/Gallery/Gallery.jsx'
 import HeadDiv from './Components/HeadDiv/HeadDiv'
 import Header from './Components/Header/Header'
 import Krish from './Components/Krish/Krish'
@@ -27,6 +28,7 @@ const App = () => {
         <AboutKrishStationary/>
         <ServicesK/> 
         <KrishElectrical/>
+        <Gallery/>
         <VisitUs/>
         <Footer/> 
     </div>
