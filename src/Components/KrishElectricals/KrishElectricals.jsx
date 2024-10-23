@@ -1,13 +1,13 @@
-import { FaTools, FaBolt, FaHome } from "react-icons/fa"; 
+import { FaTools, FaBolt, FaHome, FaStar, FaStarHalfAlt } from "react-icons/fa"; 
 import electricalLogo from '../../Assets/Krish_elec_logo.jpg';
 import foundationLogo from '../../Assets/Krish_foundation.webp'; // Foundation logo
 
 const KrishElectrical = () => {
   const services = [
     {
-      name: "Krish Mixer + 2 Jars, 7 Solar Motors",
+      name: "Krish Mixer 750W Motors + 2 Jars, 7 Solar Motors",
       description:
-        "Includes a mixer with two jars and seven solar motors. Comes with a one-year service warranty.",
+        "Includes a mixer of 750W motor, 3-speed, 4.5-star rating for power consumption with two jars and seven solar motors. Comes with a one-year service warranty.",
       icon: <FaTools />,
       price: 2500,
     },
@@ -20,7 +20,7 @@ const KrishElectrical = () => {
     {
       name: "Home Appliances",
       description:
-        "Range of appliances including Fan, Mixy, Water Heater, Cooker, Grinder, Gas Stove, and Tower Jar.",
+        "Range of appliances including Fan, Mixy, Water Heater, Cooker, Grinder, Gas Stove, and Tower Fan.",
       icon: <FaHome />,
     },
   ];
@@ -61,6 +61,18 @@ const KrishElectrical = () => {
             <p className="text-gray-600 text-center text-base sm:text-lg mb-6">
               {service.description}
             </p>
+
+            {/* Star Rating */}
+            {service.name === "Krish Mixer 750W Motors + 2 Jars, 7 Solar Motors" && (
+              <div className="flex justify-center items-center mb-4">
+                <FaStar className="text-yellow-500" />
+                <FaStar className="text-yellow-500" />
+                <FaStar className="text-yellow-500" />
+                <FaStar className="text-yellow-500" />
+                <FaStarHalfAlt className="text-yellow-500" />
+              </div>
+            )}
+
             {service.price && (
               <div className="text-lg font-semibold text-blue-700 mb-4">
                 Rs.{service.price}
@@ -91,9 +103,7 @@ const KrishElectrical = () => {
         </h1>
         <p className="text-gray-600 mt-4 text-lg sm:text-xl md:text-2xl max-w-5xl">
           Empowering communities through sustainable and impactful projects. We believe in giving back to the community. Through the Krish Foundation, we are dedicated to supporting sustainable development and fostering growth in underserved regions.  Our focus lies in promoting renewable energy solutions, providing educational support, and empowering local entrepreneurs. Join us in making a positive difference!
-        
         </p>
-        
       </div>
     </div>
   );

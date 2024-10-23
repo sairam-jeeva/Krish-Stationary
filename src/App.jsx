@@ -13,6 +13,7 @@ import OurProducts from './Components/OurProducts/OurProducts'
 import PremiumDis from './Components/PremiumDis/PremiumDis'
 import ServicesK from './Components/ServicesK/ServicesK.jsx'
 import VisitUs from './Components/VisitUs/VisitUs'
+import Contactus from './Components/Contactus/Contactus'
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
         <KrishElectrical/>
         <Gallery/>
         <VisitUs/>
+        <Contactus/>
         <Footer/> 
     </div>
   )

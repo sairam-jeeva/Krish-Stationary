@@ -4,8 +4,19 @@ import React from 'react';
 import img1 from '../../Assets/gal1.jpg';
 import img2 from '../../Assets/gal2.jpg';
 import img3 from '../../Assets/gal3.jpg';
+import img4 from '../../Assets/review1.jpg';
+import img5 from '../../Assets/review2.jpg';
+import img6 from '../../Assets/review3.jpg';
+import img7 from '../../Assets/review4.jpg';
+import img8 from '../../Assets/review5.jpg';
+import img9 from '../../Assets/review6.jpg';
+import img10 from '../../Assets/review7.jpg';
+import img11 from '../../Assets/review8.jpg';
+import img12 from '../../Assets/review9.jpg';
+import img13 from '../../Assets/review10.jpg';
+import img14 from '../../Assets/review11.jpg';
+import img15 from '../../Assets/review12.jpg';
 
-// Array of images with descriptions
 const images = [
   {
     src: img1,
@@ -18,6 +29,54 @@ const images = [
   {
     src: img3,
     alt: 'City Night View',
+  },
+  {
+    src: img4,
+    alt: 'Reviews',
+  },
+  {
+    src: img5,
+    alt: 'Reviews',
+  },
+  {
+    src: img6,
+    alt: 'Reviews',
+  },
+  {
+    src: img7,
+    alt: 'Reviews',
+  },
+  {
+    src: img8,
+    alt: 'Reviews',
+  },
+  {
+    src: img9,
+    alt: 'Reviews',
+  },
+  {
+    src: img10,
+    alt: 'Reviews',
+  },
+  {
+    src: img11,
+    alt: 'Reviews',
+  },
+  {
+    src: img12,
+    alt: 'Reviews',
+  },
+  {
+    src: img13,
+    alt: 'Reviews',
+  },
+  {
+    src: img14,
+    alt: 'Reviews',
+  },
+  {
+    src: img15,
+    alt: 'Reviews',
   },
 ];
 
