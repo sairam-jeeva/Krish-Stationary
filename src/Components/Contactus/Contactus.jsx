@@ -1,29 +1,45 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-const ContactForm = () => {
+function App() {
   const [formData, setFormData] = useState({
     name: '',
-    mobile: '',
-    address: '',
     email: '',
-    product: '',
-    additionalInfo: ''
+    message: ''
   });
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission here (e.g., sending the data to an API)
-    console.log('Form submitted:', formData);
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formDataObject = new FormData(event.target);
+
+    formDataObject.append("access_key", "bf44eeca-f8cc-463e-8a29-99d72cf10889");
+
+    const object = Object.fromEntries(formDataObject);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+      console.log("Success", res);
+    } else {
+      console.log("Error", res);
+    }
   };
 
   return (
-    <div className="font-outfit w-full max-w-lg mx-auto mt-10 mb-10 bg-gradient-to-br from-blue-50 to-white p-8 shadow-2xl rounded-lg">
+    <div className="font-outfit w-full max-w-lg mx-auto bg-white p-8 shadow-lg rounded-lg mt-12 mb-12">
       <h2 className="text-3xl font-bold text-gray-900 text-center mb-6">Contact Us</h2>
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <form onSubmit={onSubmit} className="space-y-6">
         
         {/* Name Field */}
         <div>
@@ -40,76 +56,32 @@ const ContactForm = () => {
           />
         </div>
 
-        {/* Mobile Number Field */}
-        <div>
-          <label htmlFor="mobile" className="block text-sm font-medium text-gray-700">Mobile Number</label>
-          <input
-            type="tel"
-            name="mobile"
-            id="mobile"
-            value={formData.mobile}
-            onChange={handleChange}
-            required
-            className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-            placeholder="Enter your mobile number"
-          />
-        </div>
-
-        {/* Address Field */}
-        <div>
-          <label htmlFor="address" className="block text-sm font-medium text-gray-700">Address</label>
-          <textarea
-            name="address"
-            id="address"
-            value={formData.address}
-            onChange={handleChange}
-            required
-            className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-            placeholder="Enter your address"
-          ></textarea>
-        </div>
-
-
-        
         {/* Email Field */}
         <div>
           <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
-          <textarea
+          <input
+            type="email"
             name="email"
             id="email"
             value={formData.email}
             onChange={handleChange}
             required
             className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-            placeholder="Enter your Email"
-          ></textarea>
-        </div>
-
-        {/* Product Request Field */}
-        <div>
-          <label htmlFor="product" className="block text-sm font-medium text-gray-700">Product Needed</label>
-          <input
-            type="text"
-            name="product"
-            id="product"
-            value={formData.product}
-            onChange={handleChange}
-            required
-            className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-            placeholder="What product are you looking for?"
+            placeholder="Enter your email"
           />
         </div>
 
-        {/* Additional Information Field */}
+        {/* Message Field */}
         <div>
-          <label htmlFor="additionalInfo" className="block text-sm font-medium text-gray-700">Additional Information</label>
+          <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
           <textarea
-            name="additionalInfo"
-            id="additionalInfo"
-            value={formData.additionalInfo}
+            name="message"
+            id="message"
+            value={formData.message}
             onChange={handleChange}
+            required
             className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-            placeholder="Any additional details?"
+            placeholder="Enter your message"
           ></textarea>
         </div>
 
@@ -119,12 +91,12 @@ const ContactForm = () => {
             type="submit"
             className="w-full bg-blue-600 text-white font-bold py-2 px-4 rounded-md shadow-lg hover:bg-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50 transition duration-300"
           >
-            Submit
+            Submit Form
           </button>
         </div>
       </form>
     </div>
   );
-};
+}
 
-export default ContactForm;
+export default App;

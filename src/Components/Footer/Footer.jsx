@@ -42,7 +42,7 @@ const Footer = () => {
         {/* Contact Section */}
         <div className="flex flex-col">
           <h1 className="font-bold text-2xl mb-4 text-center md:text-left">Contact Us</h1>
-          <p className="text-sm font-light mb-2">Email: <a href="mailto:info@tuneuptech.in" className="hover:text-blue-500">krishstationerysalem1@gmail.com</a></p>
+          <p className="text-sm font-light mb-2">Email: <a href="mailto:krishstationerysalem1@gmail.com" className="hover:text-blue-500">krishstationerysalem1@gmail.com</a></p>
           <p className="text-sm font-light">Phone: <a href="tel:+919944500207" className="hover:text-blue-500">+91 9500899155</a></p>
         </div>
 

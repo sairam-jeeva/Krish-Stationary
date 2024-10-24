@@ -5,7 +5,7 @@ import foundationLogo from '../../Assets/Krish_foundation.webp'; // Foundation l
 const KrishElectrical = () => {
   const services = [
     {
-      name: "Krish Mixer 750W Motors + 2 Jars, 7 Solar Motors",
+      name: "Krish Mixer 750W Motors + 2 Jars",
       description:
         "Includes a mixer of 750W motor, 3-speed, 4.5-star rating for power consumption with two jars and seven solar motors. Comes with a one-year service warranty.",
       icon: <FaTools />,
@@ -26,7 +26,7 @@ const KrishElectrical = () => {
   ];
 
   return (
-    <div className="font-outfit w-full bg-gradient-to-br from-blue-50 to-blue-100 py-12 px-4 sm:px-8 md:px-16 lg:px-24">
+    <div className="font-outfit w-full bg-gradient-to-br from-blue-50 to-blue-100 py-12 px-4 sm:px-8 md:px-16 lg:px-24" id="krish_electricals">
       
       {/* Krish Electricals Section */}
       <div className="flex flex-col items-center text-center mb-12">
@@ -38,7 +38,7 @@ const KrishElectrical = () => {
           />
         </div>
         <h1 className="mt-6 text-4xl sm:text-5xl font-extrabold text-gray-900 tracking-tight">
-          Krish Electrical
+          Krish Electrical and Refrigeration Sales and Services
         </h1>
         <p className="text-gray-600 mt-4 text-lg sm:text-xl md:text-2xl max-w-5xl">
           Welcome to Krish Electrical, a trusted name in delivering cutting-edge electrical appliances and exceptional service solutions. Our team of experienced professionals is dedicated to offering reliable, energy-efficient products and ensuring the smooth functioning of your home and office appliances.
@@ -78,13 +78,14 @@ const KrishElectrical = () => {
                 Rs.{service.price}
               </div>
             )}
-            
-            <button className="mt-auto bg-purple-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-purple-500 transition duration-300 transform hover:scale-105">
-              <a href="https://wa.me/message/BNVH64UXYSWZF1" target="_blank" rel="noopener noreferrer">
-                Learn More
-              </a>
-            </button>
-            <div className="absolute top-0 left-0 w-full h-full bg-purple-100 opacity-0 group-hover:opacity-25 transition duration-300 rounded-lg"></div>
+     <div className="mt-auto">
+              <a href="https://wa.me/message/BNVH64UXYSWZF1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-purple-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-purple-500 transition duration-300 transform hover:scale-105 text-center cursor-pointer">
+              Learn More
+              </a> 
+    </div>
           </div>
         ))}
       </div>

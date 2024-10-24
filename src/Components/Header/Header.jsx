@@ -43,7 +43,7 @@ const Header = () => {
           <a href="#krishImage" onClick={() => setIsOpen(false)}>Stationery</a>
         </li>
         <li className={`text-xl md:text-lg py-2 md:py-0 transition-colors duration-200 ${isOpen ? 'text-white' : isScrolled ? 'text-white' : 'text-gray-600'}`}>
-          <a href="#krishElectrical" onClick={() => setIsOpen(false)}>Electricals</a>
+          <a href="#krish_electricals" onClick={() => setIsOpen(false)}>Electricals</a>
         </li>
         <li className={`text-xl md:text-lg py-2 md:py-0 transition-colors duration-200 ${isOpen ? 'text-white' : isScrolled ? 'text-white' : 'text-gray-600'}`}>
           <a href="#additionals" onClick={() => setIsOpen(false)}>Additional </a>
