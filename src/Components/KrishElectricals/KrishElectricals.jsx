@@ -7,7 +7,7 @@ const KrishElectrical = () => {
     {
       name: "Krish Mixer 750W Motors + 2 Jars",
       description:
-        "Includes a mixer of 750W motor, 3-speed, 4.5-star rating for power consumption with two jars and seven solar motors. Comes with a one-year service warranty.",
+        "Includes a mixer of 750W motor, 3-speed, 4.5-star rating for power consumption with two jars. Comes with a one-year service warranty.",
       icon: <FaTools />,
       price: 2500,
     },

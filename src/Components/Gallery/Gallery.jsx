@@ -101,7 +101,7 @@ const Gallery = () => {
             <img
               src={image.src}
               alt={image.alt}
-              className="w-full h-96 object-fit"
+              className="w-full h-96 object-contain"
             />
             
             {/* Hover effect */}
