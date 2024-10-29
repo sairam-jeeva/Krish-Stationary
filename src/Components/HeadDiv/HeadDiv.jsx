@@ -10,10 +10,10 @@ const HeadDiv = () => {
         {/* Text Content */}
         <div className='flex flex-col w-full md:w-[65%] lg:w-[70%] xl:w-[75%]'>
           <h2 className='text-[28px] md:text-[32px] lg:text-[36px] xl:text-[38px] font-semibold text-center md:text-left leading-tight'>
-            Krish Stationary – Your One-Stop Shop for All Stationery Needs!
+            Krish Stationery – Your One-Stop Shop for All Stationery Needs!
           </h2>
           <p className='text-base md:text-lg lg:text-[17px] xl:text-[18px] mt-4 md:mt-5 text-gray-800 text-center md:text-left leading-relaxed'>
-            Krish Stationary offers a wide selection of high-quality stationery products, office supplies, art materials, and school essentials. Whether you're a student, professional, or artist, we have everything you need to get creative and stay organized.
+            Krish Stationery offers a wide selection of high-quality stationery products, office supplies, art materials, and school essentials. Whether you're a student, professional, or artist, we have everything you need to get creative and stay organized.
           </p>
         </div>
 
