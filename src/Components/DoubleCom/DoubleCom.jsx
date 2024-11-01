@@ -28,7 +28,7 @@ const DoubleCom = () => {
             Wide Range in All Types of Stationary Items
           </h1>
           <p className='mt-3 text-[14px] md:text-[16px] xl:text-[18px] text-gray-800'>
-            Krish Stationary provides wide range of Stationary products in all kinds of industries and for wide range of peoples
+            Krish Stationery provides wide range of Stationary products in all kinds of industries and for wide range of peoples
           </p>
           <a href="#ourProducts" className='mt-5'>
             <button className='bg-purple-900 text-white hover:bg-purple-700 h-[40px] w-[120px] md:h-[50px] md:w-[150px] rounded-md'>
