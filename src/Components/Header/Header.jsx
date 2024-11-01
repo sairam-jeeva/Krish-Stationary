@@ -29,25 +29,25 @@ const Header = () => {
     >
       <img 
         src={logo} 
-        className={`w-12 h-12 md:w-20 md:h-16 transition-transform duration-300`} 
+        className={`min-h-12 max-h-12 transition-transform duration-300`} 
         alt="Logo" 
       />
       
       <ul
         className={`flex flex-col md:flex-row items-center gap-4 md:gap-8 transition-all duration-100 
-        ${isOpen ? 'absolute top-0 left-0 w-full bg-slate-500 text-white h-screen flex flex-col items-center justify-center md:static md:bg-transparent' : 'hidden md:flex'}`}
+        ${isOpen ? 'absolute top-0 left-0 w-full bg-slate-800 text-white h-screen flex flex-col items-center justify-center md:static md:bg-transparent' : 'hidden md:flex'}`}
       >
-        <div className={`absolute top-0 left-0 w-full h-full bg-black opacity-50 ${isOpen ? 'block' : 'hidden'} transition-opacity duration-300`} onClick={toggleMenu}></div>  
-        <li className={`text-xl md:text-lg py-2 md:py-0  duration-200 ${isOpen ? 'text-white' : isScrolled ? 'text-white' : 'text-gray-600'}`}>
+        <div className={`absolute top-0 left-0 w-full h-full ${isOpen ? 'block' : 'hidden'} transition-opacity duration-300`} onClick={toggleMenu}></div>  
+        <li className={`text-[20px] md:text-[15px] lg:text-[17px] xl:text-[20px]  py-2 md:py-0  duration-200 ${isOpen ? 'text-white' : isScrolled ? 'text-white' : 'text-gray-600'}`}>
           <a href="#krishImage" onClick={() => setIsOpen(false)}>Stationery</a>
         </li>
-        <li className={`text-xl md:text-lg py-2 md:py-0 duration-200 ${isOpen ? 'text-white' : isScrolled ? 'text-white' : 'text-gray-600'}`}>
+        <li className={`text-[20px] md:text-[15px] lg:text-[17px] xl:text-[20px] py-2 md:py-0 duration-200 ${isOpen ? 'text-white' : isScrolled ? 'text-white' : 'text-gray-600'}`}>
           <a href="#krish_electricals" onClick={() => setIsOpen(false)}>Electricals</a>
         </li>
-        <li className={`text-xl md:text-lg py-2 md:py-0 duration-200 ${isOpen ? 'text-white' : isScrolled ? 'text-white' : 'text-gray-600'}`}>
+        <li className={`text-[20px] md:text-[15px] lg:text-[17px] xl:text-[20px] py-2 md:py-0 duration-200 ${isOpen ? 'text-white' : isScrolled ? 'text-white' : 'text-gray-600'}`}>
           <a href="#additionals" onClick={() => setIsOpen(false)}>Additional </a>
         </li>
-        <li className={`text-xl md:text-lg py-2 md:py-0 duration-200 ${isOpen ? 'text-white' : isScrolled ? 'text-white' : 'text-gray-600'}`}>
+        <li className={`text-[20px] md:text-[15px] lg:text-[17px] xl:text-[20px] py-2 md:py-0 duration-200 ${isOpen ? 'text-white' : isScrolled ? 'text-white' : 'text-gray-600'}`}>
           <a href="#premiumDis" onClick={() => setIsOpen(false)}>Special Combo</a>
         </li>
         <li className="mt-4 md:mt-0">
