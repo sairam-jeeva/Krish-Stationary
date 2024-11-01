@@ -3,7 +3,7 @@ import rubix from '../../Assets/rubix_cube.jpg';
 
 const HeadDiv = () => {
   return (
-    <div className='mt-[8%] md:mt-[3%] mx-auto w-[90%] lg:w-[85vw] h-auto bg-customColor flex flex-col justify-center p-[6%] md:p-[3%] rounded-3xl font-outfit' id='headerdiv'>
+    <div className='mt-[100px] mx-auto w-[90%] lg:w-[85vw] h-auto bg-customColor flex flex-col justify-center p-[6%] md:p-[3%] rounded-3xl font-outfit' id='headerdiv'>
       
       <div className='relative flex flex-col md:flex-row justify-between items-center md:items-start'>
 

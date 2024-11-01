@@ -22,17 +22,17 @@ const Header = () => {
 
   return (
     <div
-      className={`flex justify-between items-center px-4 md:px-8 lg:px-16 xl:px-24 transition-all duration-300 
-      ${isScrolled ? 'bg-gray-800 shadow-lg fixed top-0 w-full z-50' : 'bg-transparent'} ${isOpen ? 'fixed top-0 w-full z-50' : ''}`}
+      className={`flex justify-between items-center fixed top-0 w-full px-4 md:px-8 lg:px-16 xl:px-24 transition duration-1000 ease-in-out
+      ${isScrolled ? 'bg-gray-800 shadow-lg fixed top-0 w-full z-50 transition duration-1000 ease-in-out' : 'bg-transparent'} ${isOpen ? 'fixed top-0 w-full z-50' : ''}`}
       id="header"
-      style={{ height: isScrolled ? '80px' : '100px', top: isOpen ? '0' : isScrolled ? '0' : '10px' }}
+      style={{ height: isScrolled ? '80px' : '80px', top: isOpen ? '0' : isScrolled ? '0' : '0' }}
     >
       <img 
         src={logo} 
-        className={`w-12 h-12 md:w-20 md:h-16 transition-transform duration-300 ${isScrolled ? 'transform scale-90' : ''}`} 
+        className={`w-12 h-12 md:w-20 md:h-16 transition-transform duration-300`} 
         alt="Logo" 
       />
-
+      
       <ul
         className={`flex flex-col md:flex-row items-center gap-4 md:gap-8 transition-all duration-100 
         ${isOpen ? 'absolute top-0 left-0 w-full bg-slate-500 text-white h-screen flex flex-col items-center justify-center md:static md:bg-transparent' : 'hidden md:flex'}`}
