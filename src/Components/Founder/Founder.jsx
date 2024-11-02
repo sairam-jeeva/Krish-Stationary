@@ -20,7 +20,7 @@ const Team = () => {
             About the Founder
           </h2>
           <p className="text-gray-600 text-base md:text-lg lg:text-xl mb-4 leading-relaxed">
-           Mr.Naveen G,is a highly skilled professional with a diploma in Electrical and Electronics Engineering and a diploma in Computer Applications and <span className='text-[19px] text-yellow-600'>Social Media Actor</span> . He has extensive experience in the public service sector, having worked as a Gold Appraiser and providing Electrical and Refrigeration services since 2012.
+           Mr.Naveen G,is a highly skilled professional with a diploma in Electrical and Electronics Engineering and a diploma in Computer Applications and <span className='text-[19px] text-yellow-600'>Social Media Actor</span>. He has extensive experience in the public service sector, having worked as a Gold Appraiser and providing Electrical and Refrigeration services since 2012.
           </p>
           <div className="bg-yellow-100 p-4 rounded-lg mb-6">
             <h3 className="text-2xl font-bold text-yellow-600 mb-2">

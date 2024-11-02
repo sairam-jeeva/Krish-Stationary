@@ -60,9 +60,9 @@ const Header = () => {
         </li>
       </ul>
 
-      <div className={`md:hidden text-2xl cursor-pointer ${isScrolled ? 'fixed right-4 top-7' : 'absolute top-8 right-6'}`} onClick={toggleMenu}>
+      <div className={`md:hidden text-2xl cursor-pointer ${isScrolled ? 'fixed right-6 top-6': 'absolute top-6 right-6'}`} onClick={toggleMenu}>
         {isOpen ? (
-          <i className={`fas fa-times ${isScrolled ? 'text-white' : 'text-black'}`}></i>
+          <i className={`fas fa-times ${isScrolled ? ' text-white' : ' text-black'}`}></i>
         ) : (
           <i className={`fas fa-bars ${isScrolled ? 'text-white' : 'text-black'}`}></i>
         )}
