@@ -40,10 +40,10 @@ const Footer = () => {
         </div>
 
         {/* Contact Section */}
-        <div className="flex flex-col">
+        <div className="flex flex-col mr-10">
           <h1 className="font-bold text-2xl mb-4 text-center md:text-left">Contact Us</h1>
-          <p className="text-sm font-light mb-2">Email: <a href="mailto:krishstationerysalem1@gmail.com" className="hover:text-blue-500">krishstationerysalem1@gmail.com</a></p>
-          <p className="text-sm font-light">Phone: <a href="tel:+919944500207" className="hover:text-blue-500">+91 9500899155</a></p>
+          <p className="text-sm mb-2"><span className='font-bold'> Email: </span><a href="mailto:krishstationerysalem1@gmail.com" className="hover:text-blue-500">krishstationerysalem1@gmail.com</a></p>
+          <p className="text-sm"><span className='font-bold'>Phone:</span> <a href="tel:+919944500207" className="hover:text-blue-500">+91 9500899155</a></p>
         </div>
 
         {/* Google Reviews Section */}
@@ -62,15 +62,15 @@ const Footer = () => {
               Write a Review
             </a>
           </div>
+          <p>Level up by <a href="tuneuptech.in" className="text-blue-500 hover:text-white">TuneUp Technologies</a></p>
         </div>
       </div>
 
       {/* Bottom Copyright */}
       <div className="text-center p-4 bg-gray-900">
-        &copy; LevelUp by TuneUp Technologies
+        &copy; All rights reserved by Krish Stationery Salem
       </div>
     </footer>
   );
 };
-
 export default Footer;

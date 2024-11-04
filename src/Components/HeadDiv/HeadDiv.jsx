@@ -25,7 +25,15 @@ const HeadDiv = () => {
             alt="Rubix Cube"
           />
         </div>
-        
+      </div>
+
+      {/* Button */}
+      <div className='mt-3 md:mt-[13px] flex justify-center md:justify-start'>
+        <a href="#ourProducts">
+          <button className="bg-green-900 px-6 py-3 lg:px-8 lg:py-3.5 hover:bg-green-700 rounded-lg text-white transition duration-200 transform hover:scale-105">
+            Shop Now
+          </button>
+        </a>
       </div>
 
       {/* Enhanced Social Media Offer Note */}
@@ -40,17 +48,7 @@ const HeadDiv = () => {
             Follow us on social media to avail the discount on any product!
           </p>
         </div>
-      </div>
-
-      {/* Button */}
-      <div className='mt-8 md:mt-10 flex justify-center md:justify-start'>
-        <a href="#ourProducts">
-          <button className="bg-green-900 px-6 py-3 lg:px-8 lg:py-3.5 hover:bg-green-700 rounded-lg text-white transition duration-200 transform hover:scale-105">
-            Shop Now
-          </button>
-        </a>
-      </div>
-      
+      </div>      
     </div>
   );
 }
