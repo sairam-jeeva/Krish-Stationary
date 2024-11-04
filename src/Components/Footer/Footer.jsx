@@ -62,7 +62,7 @@ const Footer = () => {
               Write a Review
             </a>
           </div>
-          <p>Level up by <a href="tuneuptech.in" className="text-blue-500 hover:text-white">TuneUp Technologies</a></p>
+          <p>Level up by <a href="https://tuneuptech.in/" className="text-blue-500 hover:text-white">TuneUp Technologies</a></p>
         </div>
       </div>
 
