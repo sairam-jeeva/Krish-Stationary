@@ -1,5 +1,5 @@
 import React from 'react';
-import rubix from '../../Assets/rubix_cube.jpg';
+import rubix from '../../Assets/rubix_cube.png';
 
 const HeadDiv = () => {
   return (
